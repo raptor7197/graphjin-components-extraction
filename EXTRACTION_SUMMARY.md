@@ -44,21 +44,6 @@
 - Weight-based path optimization
 - Bidirectional edge support
 
-- HTTP server
-- WebSocket support
-- Authentication/authorization
-- Rate limiting
-- Caching layer
-- API gateway features
-
-### Dependencies Removed
-
-The extraction removed most dependencies, keeping only:
-- `database/sql` (standard library)
-- `github.com/lib/pq` (PostgreSQL driver)
-- `golang.org/x/sync` (errgroup for parallel queries)
-
-## File Structure Comparison
 
 ### Before Extraction
 ```
@@ -75,8 +60,6 @@ graphjin/
 ├── website/         (Documentation site)
 └── ... (500+ files)
 ```
-
-
 
 ### 3. Documentation Added
 - `README.md` - Main documentation with architecture and examples
